@@ -13,10 +13,11 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th>ID</th>
 					<th>Description</th>
 					<th>TargetDate</th>
 					<th>Progress</th>
+					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 
@@ -24,10 +25,11 @@
 
 				<c:forEach items="${todos}" var="todos">
 					<tr>
-						<td>${todos.id}</td>
 						<td>${todos.description}</td>
 						<td>${todos.targetDate}</td>
 						<td>${todos.done}</td>
+						<td><a href="update-todo?id=${todos.id}" class="btn btn-success">Update</a></td>
+						<td ><a href="delete-todo?id=${todos.id}" class="btn btn-warning">Delete</a></td>
 					</tr>
 
 

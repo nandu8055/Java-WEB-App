@@ -1,14 +1,10 @@
-<html>
-<head>
-<title>WELCOME to 1st website</title>
-</head>
-<body>
-	<div class="container">
-		<div>Welcome Page</div>
-		<hr>
-		<div>
-			<a href="list-todo">Manage </a>Your Todos
-		</div>
+<%@include file="common/header.jspf"%>
+<%@include file="common/navigation.jspf"%>
+<div class="container">
+	<div>Welcome Page</div>
+	<hr>
+	<div>
+		<a href="list-todo">Manage </a>Your Todos
 	</div>
-</body>
-</html>
+</div>
+<%@include file="common/footer.jspf"%>
